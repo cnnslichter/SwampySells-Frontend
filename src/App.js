@@ -39,7 +39,7 @@ function App() {
         <Route path='/' element={<Login />}></Route>
         <Route path='/search' element={<ProtectRoute element={<Search />}/>}/>
         <Route path='register' element={<Register />}></Route>
-        <Route path='home' element={<Home />} />
+        <Route path='home' element={<ProtectRoute element={<Home />} />} />
         <Route path='item/:id' element={<ViewItem />}></Route>
         <Route path='post' element={<ProtectRoute element={<Post />} />}/>
         <Route path='inbox' element={<ProtectRoute element={<Inbox />}/>}/>
