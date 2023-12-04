@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
       const logout = async () => {
         try {
-          const response = await fetch('http://localhost:5003/api/logout', {
+          const response = await fetch('https://swampysells-api.onrender.com/api/logout', {
             method: 'POST',
             credentials: 'include',
           });

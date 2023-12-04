@@ -14,7 +14,7 @@ export const ViewItem = () => {
     useEffect(() => {
         const retrieveItem = async () => {
             try {
-                const response = await fetch(`http://localhost:5003/api/item/${id}`)
+                const response = await fetch(`https://swampysells-api.onrender.com/api/item/${id}`)
                 const responseData = await response.json();
                 const base64 = Buffer.from(responseData.image.data).toString('base64');
 

@@ -8,7 +8,7 @@ export const Textbooks = () => {
   const urlSearchParams = new URLSearchParams(`?category=textbooks`);
 
   useEffect(() => {
-    axios.get('http://localhost:5003/getTextbooks')
+    axios.get('https://swampysells-api.onrender.com/getTextbooks')
     .then(items => setItems(items.data))
     .catch(err => console.log(err))
   }, [])

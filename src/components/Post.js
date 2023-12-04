@@ -42,7 +42,7 @@ export const Post = (props) => {
         formData.append('location', user.location);
     
         try {
-            const response = await fetch('http://localhost:5003/api/item/:id', {
+            const response = await fetch('https://swampysells-api.onrender.com/api/item/:id', {
               method: 'POST',
               body: formData,
             });

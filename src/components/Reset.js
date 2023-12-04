@@ -26,7 +26,7 @@ export const Reset = (props) => {
 
     e.preventDefault()
       if (validateInput(password)) {
-      axios.post(`http://localhost:5003/reset/${id}/${token}`, {password})
+      axios.post(`https://swampysells-api.onrender.com/reset/${id}/${token}`, {password})
       .then(res => {
       if(res.data.Status === "Success") {
         navigate('/')     

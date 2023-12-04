@@ -17,7 +17,7 @@ export const Register = (props) => {
         event.preventDefault();
         if(validateInput())
             try{
-                const response = await fetch('http://localhost:5003/api/register', {
+                const response = await fetch('https://swampysells-api.onrender.com/api/register', {
                     mode: 'cors',
                     method: 'POST',
                     headers: {
@@ -40,7 +40,7 @@ export const Register = (props) => {
     }
     const handleVerification = async(event) => {
         try {
-            const response = await fetch(`http://localhost:5003/api/register?email=${email}&code=${verificationCode}`);
+            const response = await fetch(`https://swampysells-api.onrender.com/api/register?email=${email}&code=${verificationCode}`);
             if (response.status ===200) {
                 toast.success('Account successfully created')
             }

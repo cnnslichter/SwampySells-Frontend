@@ -7,7 +7,7 @@ export const Other = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5003/getOther')
+    axios.get('https://swampysells-api.onrender.com/getOther')
     .then(items => setItems(items.data))
     .catch(err => console.log(err))
   }, [])

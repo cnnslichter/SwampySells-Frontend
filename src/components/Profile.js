@@ -41,7 +41,7 @@ export const Profile = (props) => {
   useEffect(() => {
     const getListings = async () =>  {
       try {
-        const responseWithPosts = await axios.get(`http://localhost:5003/api/item/:id/userItems/${user._id}`);
+        const responseWithPosts = await axios.get(`https://swampysells-api.onrender.com/api/item/:id/userItems/${user._id}`);
         setListings(responseWithPosts.data)
 
       } catch (error) {
