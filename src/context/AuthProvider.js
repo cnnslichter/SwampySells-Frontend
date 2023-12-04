@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     const login = async (email, password) => {
         try {
             
-            const response = await fetch('http://localhost:5003/api/login', {
+            const response = await fetch('https://swampysells-api.onrender.com/api/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
             if (response.status === 200) {
               console.log('response.status === 200')
               setAuthenticated(true);
-              const getUser = await fetch('http://localhost:5003/api/auth', {
+              const getUser = await fetch('https://swampysells-api.onrender.com/api/auth', {
                 method: 'GET',
                 credentials: 'include'
               });
