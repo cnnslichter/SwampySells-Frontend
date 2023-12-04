@@ -16,10 +16,10 @@ const Header = () => {
       <Link to='/home'><img className="home-logo" src="../swampysells-logo.png"></img></Link>
       <div className="inline-div">
       <SearchInput />
-          <div className="item">
+          {/* <div className="item">
             <img src="../destination.png" style={{width:"15px", height:"20px", marginTop:"45px"}}></img>
             <span className="caption">{user.location}</span>
-          </div>
+          </div> */}
           <div className="inline-div" style={{marginTop:"40px", marginLeft: "240px"}}>
               <div style={{justifyContent:"center", textAlign:"center"}}>
                 <img className="navbar-icons" src="../home.png" style={{width:"28px"}}></img>
